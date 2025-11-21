@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="assets/aku.png" alt="Foto Salsha Ramadhania">
+    <h1>Salshabila Sucy Ayu Ramadhania</h1>
+    <p>Mahasiswa Teknik Informatika</p>
+</header>
+
+<nav>
+    <a href="#about">Tentang Saya</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Kontak</a>
+</nav>
+
+<section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Halo! Saya Salshabila, Saya adalah mahasiswa Teknik Informatika yang selalu bersemangat untuk belajar hal-hal baru, khususnya di bidang pemrograman, pengembangan aplikasi, dan teknologi digital. Saya suka mengeksplorasi cara kerja suatu sistem dan mencoba membuat solusi yang lebih efektif serta kreatif.</p>
+
+    <h3>Informasi</h3>
+    <ul>
+        <li><strong>Nama:</strong> Salshabila Sucy Ayu Ramadhania</li>
+        <li><strong>Email:</strong> salshabilasucy@email.com</li>
+        <li><strong>Telepon:</strong> +62 831 4286 3501</li>
+        <li><strong>Alamat:</strong> Tangerang Selatan</li>
+        <li><strong>Pendidikan:</strong> Teknik Informatika - Universitas Pamulang (2023 - Sekarang)</li>
+        <li><strong>GitHub:</strong> 
+            <a href="https://github.com/salshabilasucy" target="_blank">
+                https://github.com/salshabilasucy
+            </a>
+        </li>
+    </ul>
+
+    <h3>Keahlian</h3>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Proyek</h2>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="assets/portofolio.png" alt="HTML CSS Portfolio">
+            <h3>Website Portofolio Sederhana</h3>
+            <p>Proyek belajar HTML dan CSS untuk membuat website portofolio sederhana.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/rs.png" alt="Python Web">
+            <h3>Website Sederhana dengan Python</h3>
+            <p>Membuat website dasar menggunakan Python.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/input.png" alt="Form Input">
+            <h3>Latihan Form Input</h3>
+            <p>Latihan membuat form input sederhana.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontak</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Pesan sukses -->
+    <p id="successMessage" class="success-message" style="display:none;">
+        Pesan berhasil dikirim! Terima kasih 😊
+    </p>
+</section>
+
+<footer>
+    &copy; 2025 Salsha Ramadhania. Semua hak cipta dilindungi.
+</footer>
+
+<script>
+    const form = document.getElementById("contactForm");
+    const successMsg = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        successMsg.style.display = "block";
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
