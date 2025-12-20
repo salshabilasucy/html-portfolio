@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>SARI.SEGAR</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <h1>SARI.SEGAR</h1>
+  <p class="tagline">jus lokal • fresh setiap hari</p>
+
+  <!-- MENU -->
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="images/alpukat.jpeg" alt="Jus Alpukat">
+      <h3>Jus Alpukat</h3>
+      <p>Rp 18.000</p>
+      <button onclick="tambah('Jus Alpukat', 18000)">Pesan</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/mangga.jpg" alt="Jus Mangga">
+      <h3>Jus Mangga</h3>
+      <p>Rp 14.000</p>
+      <button onclick="tambah('Jus Mangga', 14000)">Pesan</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/jeruk.png" alt="Jus Jeruk">
+      <h3>Jus Jeruk</h3>
+      <p>Rp 12.000</p>
+      <button onclick="tambah('Jus Jeruk', 12000)">Pesan</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/jambu.jpeg" alt="Jus Jambu">
+      <h3>Jus Jambu</h3>
+      <p>Rp 13.000</p>
+      <button onclick="tambah('Jus Jambu', 13000)">Pesan</button>
+    </div>
+
+  </div>
+
+  <!-- PESANAN -->
+  <div class="pesanan-card">
+    <h2>Pesanan Kamu</h2>
+    <ul id="listPesanan"></ul>
+    <h3>Total: Rp <span id="total">0</span></h3>
+
+    <button class="wa-btn" onclick="kirimWA()">Kirim Pesanan ke WhatsApp</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
