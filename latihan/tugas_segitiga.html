@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Segitiga</title>
+</head>
+<body>
+
+<script>
+/* SEGITIGA BIASA */
+for (var i = 1; i <= 5; i++) {
+    for (var j = 1; j <= i; j++) {
+        document.write("*");
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+/* SEGITIGA SAMA KAKI */
+var tinggi = 5;
+
+for (var i = 1; i <= tinggi; i++) {
+    for (var j = i; j < tinggi; j++) {
+        document.write("&nbsp;");
+    }
+    for (var k = 1; k <= (2 * i - 1); k++) {
+        document.write("*");
+    }
+    document.write("<br>");
+}
+</script>
+
+</body>
+</html>
